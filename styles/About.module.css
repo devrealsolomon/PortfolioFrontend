@@ -1,0 +1,142 @@
+
+.aboutMain h1 {
+	/*font-size: 3rem;*/
+	line-height: 3.6rem;
+	margin: 0 0 2.4rem;
+}
+
+.aboutMain h2 {
+	margin: 3.2rem 0 1.6rem;
+}
+
+.aboutMain h3 {
+	margin:  2.8rem 0 0.8rem;
+}
+
+.aboutMain h4 {
+	margin:  0 0 0.8rem 0;
+}
+
+.aboutMain p {
+	font-size: 1.6rem;
+	margin: 0 0 1rem;
+	line-height: 2.8rem;
+	word-spacing: 0.1rem;
+	opacity: 0.9;
+}
+
+.aboutMain a {
+	opacity: 1;
+	text-decoration: underline;
+	font-weight: 500;
+	color: var(--pri-blue-normal);
+}
+
+.aboutMain a:hover {
+	text-decoration: none;
+}
+
+.aboutMain ul {
+	margin: 2rem 0;
+	line-height: 2.8rem;
+	opacity: 0.9;
+	display: grid;
+	grid-template-columns: 33% 33% 33%;
+	gap: 1rem;
+	grid-gap: 1rem;
+}
+/* code backgroud-color: #f0efed; */
+.aboutMain li {
+	line-height: 2.8rem;
+	list-style-type: square;
+	list-style-position: inside;
+	margin: 0.4rem 0;
+}
+
+.aboutMain li::marker {
+	color: var(--pri-blue-normal);
+}
+
+.aboutMain li ul li {
+	padding: 0 0 0 2.2rem;
+}
+
+.resumeBtn {
+	background-image: linear-gradient(to right, rgb(34, 193, 195), rgb(253, 187, 45));
+	color: black !important;
+	text-decoration: none !important;
+	padding: 1rem 2rem;
+	border-radius: 10rem;
+	display: inline-block;
+	margin-top: 1rem;
+	-webkit-border-radius: 10rem;
+	-moz-border-radius: 10rem;
+	-ms-border-radius: 10rem;
+	-o-border-radius: 10rem;
+}
+
+.resumeBtn:hover {
+	opacity: 0.85;
+}
+
+.aboutSectionOne {
+	display: grid;
+	grid-template-columns: auto auto;
+	gap: 5rem;
+	grid-gap: 5rem;
+	margin-bottom: 5rem;
+}
+
+.photoWrapper {
+	padding: 2rem;
+	backdrop-filter: blur(8px) saturate(180%);
+	background: var(--header-bg);
+	border-radius: 1rem;
+	margin-top: 1rem;
+	transform: translateX(-2rem);
+	display: inline-block;
+}
+
+.photoWrapper img {
+	border-radius: 1rem;
+	/* height: 100% !important; */
+}
+
+.aboutFooter {
+	margin-top: 5rem;
+}
+
+@media screen and (max-width: 1045px) {
+	.aboutMain ul {
+		grid-template-columns: 48% 48%;
+	}
+
+	.aboutSectionOne {
+		gap: 2rem;
+		grid-gap: 2rem;
+	}
+}
+
+@media screen and (max-width: 950px) {
+	.aboutSectionOne {
+		gap: 1rem;
+		grid-gap: 1rem;
+	}
+}
+
+@media screen and (max-width: 770px) {
+	.aboutSectionOne {
+		grid-template-columns: 1fr;
+	}
+
+	.aboutSectionOne > div:nth-child(1) {
+		grid-row: 2/3;
+	}
+}
+
+
+@media screen and (max-width: 590px) {
+	.aboutMain ul {
+		grid-template-columns: 1fr;
+	}
+}
